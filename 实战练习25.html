@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>25</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img{
+            border: none;
+            vertical-align: top;
+        }
+        a{
+            text-decoration: none;
+        }
+        #box{
+            width: 708px;
+            height: 254px;
+            margin: 30px auto;
+        }
+        #content{
+            width: 708px;
+            position:absolute;
+            left: 0;
+            top: 0;
+        }
+        #content-hd{
+            position: relative;
+            height: 222px;
+        }
+        .item{
+            float: left;
+            width:708px;
+        }
+        .item-l{
+            width: 352px;
+            height: 222px;
+            float: left;
+        }
+        .item-l img,.items img{
+            width: 100%;
+            height: 100%;
+        }
+        .item-r{
+            width: 356px;
+            float: right;
+        }
+        .items{
+            width: 174px;
+            height: 109px;
+            float: left;
+            margin-left: 4px;
+            margin-bottom: 4px;
+        }
+        .left,.right{
+            width: 29px;
+            height: 54px;
+            position: absolute;
+            top: 50%;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            margin-top: -27px;
+        }
+        .left{
+            background-image: url("images/images/prev.png");
+            left: 0;
+        }
+        .right{
+            background-image: url("images/images/next.png");
+            right: 0;
+        }
+        .point{
+            padding: 10px 0;
+            text-align: right;
+            width: 100%;
+        }
+        .point a{
+            background: url("images/images/j7.jpg") no-repeat 0 0;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-left: 10px;
+        }
+        .point .active{
+            background-image: url("images/images/j6.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="content-hd">
+        <div id="content">
+            <div class="item">
+                <div class="item-l">
+                    <img src="images/images/j1.jpg">
+                </div>
+                <div class="item-r">
+                    <div class="items"><a href="#"><img src="images/images/j2.jpg"> </a></div>
+                    <div class="items"><a href="#"><img src="images/images/j3.jpg"> </a></div>
+                    <div class="items"><a href="#"><img src="images/images/j4.jpg"> </a></div>
+                    <div class="items"><a href="#"><img src="images/images/j5.jpg"> </a></div>
+                </div>
+            </div>
+            <a href="#" class="left"></a>
+            <a href="#" class="right"></a>
+        </div>
+        </div>
+        <div class="point">
+            <a href="#"></a>
+            <a href="#" class="active"></a>
+            <a href="#"></a>
+        </div>
+    </div>
+</body>
+</html>

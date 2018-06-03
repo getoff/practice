@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>34</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .clearfix:after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .clearinner li:after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+        input{border: none;outline: none;background-color: transparent;}
+        #list{
+            width: 470px;
+            margin: 30px auto;
+        }
+        #list li{
+            margin-bottom: 10px;
+        }
+        #list .text{
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px;
+            float: left;
+            text-align: right;
+            padding-right: 10px;
+        }
+        .content{
+            margin-left: 110px;
+        }
+        .input{
+            width: 300px;
+            height: 35px;
+            font-size: 12px;
+            padding:0 10px;
+            border: 1px solid #838383;
+            border-radius: 3px;
+            background-color: #F3F9FC;
+            box-shadow:inset 0 1px 2px #dee9f4;
+        }
+        .sex{
+            padding-top: 6px;
+        }
+        .sex span{
+            height: 17px;
+            font-size: 12px;
+            padding-left: 20px;
+            background: url("images/img3/r1.jpg") left center no-repeat;
+        }
+        .sex .choose{
+            background-image: url("images/img3/r2.jpg");
+        }
+        .cont{
+            padding-top: 5px;
+        }
+        .select{
+            width: 60px;
+            height: 23px;
+            line-height: 23px;
+            border: 1px solid #e35969;
+            box-sizing: border-box;
+            border-radius: 2px;
+            box-shadow:inset 0 1px 1px #4B91F3;
+            position: relative;
+            float: left;
+            margin-right: 5px;
+        }
+        .select p{
+            font-size: 12px;
+            color: #4B91F3;
+            padding: 0 10px;
+            line-height: 23px;
+        }
+        .select i{
+            position: absolute;
+            width: 0;
+            height: 0;
+            right: 5px;
+            top: 50%;
+            border-width: 4px 4px 0;
+            margin-top: -2px;
+            border-style: solid;
+            border-color: #4B91F3 transparent transparent transparent;
+        }
+        .list-{
+            position: absolute;
+            left:-1px;
+            top: 100%;
+            background-color: #F3F9FC;
+            border: 1px solid #838383;
+            text-align: center;
+            width: 100%;
+            display: none;
+        }
+        .list- a{
+            text-decoration: none;
+            display: block;
+            height: 20px;
+            font-size: 12px;
+            line-height: 20px;
+            padding: 0 8px;
+            color: #e35969;
+        }
+        .list- a:hover{
+            background-color: #4B91F3;
+            color:#838383;
+        }
+    </style>
+</head>
+<body>
+    <div id="qq">
+        <ul id="list" class="clearinner">
+            <li>
+                <label for="name" class="text">昵称:</label>
+                <div class="content">
+                    <input type="text" class="input" id="name">
+                </div>
+            </li>
+            <li>
+                <label for="num" class="text">密码:</label>
+                <div class="content">
+                    <input type="password" class="input" id="num">
+                </div>
+            </li>
+            <li>
+                <label for="word" class="text">确认密码:</label>
+                <div class="content">
+                    <input type="password" class="input" id="word">
+                </div>
+            </li>
+            <li>
+                <label class="text">性别:</label>
+                <div class="content">
+                    <div class="sex">
+                        <span class="choose">男</span>
+                        <span>女</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <label class="text">生日:</label>
+                 <div class="content cont">
+                     <div class="select clearfix">
+                        <p id="year">公历</p>
+                        <i></i>
+                     <div class="list-">
+                        <a href="#">1990</a>
+                        <a href="#">1991</a>
+                        <a href="#">1992</a>
+                        <a href="#">1993</a>
+                        <a href="#">1994</a>
+                        <a href="#">1995</a>
+                        <a href="#">1996</a>
+                        <a href="#">1997</a>
+                        <a href="#">1998</a>
+                     </div>
+                     </div>
+                </div>
+                <div class="select clearfix">
+                    <p id="month">月</p>
+                    <i></i>
+                <div class="list-">
+                    <a href="#">01</a>
+                    <a href="#">02</a>
+                    <a href="#">03</a>
+                    <a href="#">04</a>
+                    <a href="#">05</a>
+                    <a href="#">06</a>
+                    <a href="#">07</a>
+                    <a href="#">08</a>
+                    <a href="#">09</a>
+                </div>
+                </div>
+                <div class="select clearfix">
+                    <p id="day">日</p>
+                    <i></i>
+                <div class="list-">
+                    <a href="#">10</a>
+                    <a href="#">11</a>
+                    <a href="#">12</a>
+                    <a href="#">13</a>
+                    <a href="#">14</a>
+                    <a href="#">15</a>
+                    <a href="#">16</a>
+                    <a href="#">17</a>
+                    <a href="#">18</a>
+                </div>
+                </div>
+            </li>
+            <li>
+                <span class="read">我接受注册条款</span>
+                <span class="read">我已经阅读并接受隐私条款</span>
+            </li>
+            <li>
+                <input type="button" class="btn">
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

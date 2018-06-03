@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            list-style: none;
+        }
+        #img img{
+            border: none;
+            vertical-align: top;
+        }
+        #box{
+            width: 430px;
+            padding: 20px 10px 14px;
+            margin: 30px auto;
+            border: 1px solid #666666;
+            position: relative;
+        }
+        #box h3{
+            font-size: 14px;
+            font-weight: normal;
+            background-color: #FFFFFF;
+            position: absolute;
+            left: 10px;
+            top: -10px;
+            padding: 0 10px;
+        }
+        #clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #img img{
+            width: 80px;
+            height: 80px;
+
+        }
+        #img{
+            float: left;
+        }
+        #item{
+            margin-left: 97px;
+        }
+        #item p{
+            font-size: 12px;
+            line-height:20px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+        <h3>关于我们</h3>
+
+    <div id="content clearfix">
+        <div id="img">
+            <img src="images/img/busy.jpg">
+        </div>
+        <div id="item">
+            <p>112</p>
+            <p>Beyond</p>
+            <p>需求方平台，是一个综合性管理平台，在这个平台上，广告主可以通过同一个界面管理多个数字广告和数据交换的账户。</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

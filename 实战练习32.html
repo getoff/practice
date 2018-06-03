@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>32</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a{text-decoration: none;}
+        input{
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        #box{
+
+            margin:100px;
+           letter-spacing: -7px;
+        }
+        #box a{
+            border: 1px solid #CCCCCC;
+            letter-spacing: 0;
+        }
+        #box a,.page{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 10px;
+            color:#343434;
+            text-align: center ;
+            margin-right: -1px;
+        }
+        .text{
+            font-size: 14px;
+            color: #333333;
+            letter-spacing: 0;
+            padding: 0 5px;
+        }
+        .page-num{
+            width: 34px;
+            height: 37px;
+            line-height: 37px;
+            font-size: 14px;
+            border: 1px solid #CCCCCC;
+        }
+        .button{
+            background-color: #e35969;
+            width: 60px;
+            height: 40px;
+            color: #FFFFFF;
+        }
+        #box a:hover{
+            background-color: #FF0000;
+            color: #FFFFFF;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <a href="#">&lt;</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <span class="page">...</span>
+    <a href="#">&gt;</a>
+    <span class="text">共100页 到第</span>
+    <input type="text" class="page-num">
+    <span class="text">页</span>
+    <input type="button" value="确定" class="button">
+</div>
+
+</body>
+</html>

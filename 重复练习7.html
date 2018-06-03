@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7</title>
+    <style>
+        *{margin: 0;padding: 0;list-style: none;}
+        img{border: none;vertical-align: top;}
+        a{text-decoration: none;}
+        input{
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        .taobao{
+            width: 990px;
+            height: 415px;
+            margin: 30px auto;
+            position: relative;
+            background: url("images/test/b1.jpg") center center no-repeat;
+        }
+        .button{
+            width: 306px;
+            height: 50px;
+            border: 1px solid #DAF6EA;
+            border-radius: 2px;
+            position: absolute;
+            left: 57px;
+            bottom: 121px;
+            float: left;
+        }
+        .button p{
+            display: inline-block;
+            width: 134px;
+            line-height: 50px;
+            font-size: 15px;
+            color: #067B64;
+            padding-left: 9px;
+            margin-right: 10px;
+        }
+        .button span {
+            background-color: #067B64;
+            height: 34px;
+            display: inline-block;
+            margin-top: 8px;
+            margin-bottom: 7px;
+            margin-right: 10px;
+        }
+        .button .btn{
+            display:inline-block;
+            width:81px;
+            color: #FFFFFF;
+            line-height: 34px;
+            padding-left: 52px;
+            text-align: center;
+            background: url("images/test/btn.jpg") 20% 50%  no-repeat;
+        }
+        .in{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 221px;
+            height: 41px;
+            background-color: #FFFFFF;
+            padding-top: 20px;
+        }
+        .in .inset{
+            width: 100px;
+            height: 31px;
+            background-color: #F3A01B;
+            font-size: 14px;
+            line-height: 31px;
+            margin-right: 17px;
+            border-radius: 2px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .in a{
+            font-size: 12px;
+
+        }
+        .list{
+            position: absolute;
+            right: 10px;
+            bottom: 100px;
+        }
+        .list-1 li{
+            width: 204px;
+            height: 34px;
+            padding-left: 16px;
+            margin-bottom: 2px;
+            background-color: #FFFFFF;
+        }
+        .list-1 a{
+            display: block;
+            color: #4D4D4D;
+            line-height: 34px;
+        }
+        .list-1 .cur{
+            background-color: #3083D7;
+            position: relative;
+        }
+        .cur i{
+            position: absolute;
+            left: -10px;
+            bottom: 50%;
+            margin-bottom: -5px;
+            width: 0;
+            height:0;
+            border-style: solid;
+            border-width: 5px;
+            border-color: transparent #3083D7 transparent transparent;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="taobao">
+        <div class="button">
+            <p>
+                分清类型,马上注册
+            </p>
+            <span><a href="#" class="btn">注册账户</a></span>
+
+        </div>
+        <div class="in">
+            <input class="inset" type="submit" value="登录">
+            <a href="#">免费注册</a>
+        </div>
+        <div class="list">
+            <ul class="list-1">
+                <li><a href="#"> <i></i>在"商家服务"能做什么？</a></li>
+                <li><a href="#"><i></i>商家服务主要提供什么？</a></li>
+                <li><a href="#"> <i></i>支付宝还能为做什么？</a></li>
+                <li><a href="#"> <i></i>接入支付宝的第一步是什么？</a></li>
+                <li class="cur"><i></i><a href="#"> 接口遇到技术问题怎么办？</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

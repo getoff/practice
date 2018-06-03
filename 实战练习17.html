@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a{text-decoration: none}
+        #list{
+            width: 450px;
+            height: 35px;
+            margin: 30px auto;
+            border-top: 1px solid #4B91F3;
+            border-bottom: 4px solid #4B91F3;
+            font-size: 16px;
+            border-right: 1px solid #4B91F3;
+            text-align: center;
+        }
+        #list li{
+            float: left;
+            border-left: 1px solid #4B91F3 ;
+        }
+        #list a{
+            display: inline-block;
+            width: 74px;
+            height: 35px;
+            line-height: 35px;
+            color: #4B91F3;
+            position: relative;
+        }
+        #list a:hover{
+            background-color: #4B91F3;
+            color: #FFFFFF;
+        }
+        #list i{
+            width: 0;
+            height: 0;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #4B91F3 transparent;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            display: none;
+            margin-left: -3px;
+        }
+        #list .active i{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li><a href="#">首页<i></i></a></li>
+        <li><a href="#">视频<i></i></a></li>
+        <li><a href="#" class="active">前瞻<i></i></a></li>
+        <li><a href="#">攻略<i></i></a></li>
+        <li><a href="#">评测<i></i></a></li>
+        <li><a href="#">网游<i></i></a></li>
+    </ul>
+</body>
+</html>

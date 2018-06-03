@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18</title>
+    <style>
+        *{margin: 0;padding: 0;list-style: none}
+        a{text-decoration: none;}
+        img{vertical-align: top;border: none;}
+        #clearfix:after {display: block;content: "";clear: both;}
+        #box{
+            width: 720px;
+            margin: 30px auto;
+        }
+        .item{
+            float: left;
+            width: 220px;
+            margin-right: 20px;
+        }
+        .img,.img img{
+            width: 220px;
+            height: 135px;
+        }
+        .img{
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .zk{
+            font-size: 14px;
+            width:48px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background-color: #e35969;
+            color: #FFFFFF;
+            position: absolute;
+            right: -4px;
+            top: 0;
+
+        }
+        .zk i{
+            width: 0;
+            height: 0;
+            border-width: 0 0 4px 4px;
+            border-style: solid;
+            border-color: transparent transparent transparent #e35969;
+            position: absolute;
+            right: 0;
+            top: 100%;
+
+        }
+        .item p{
+            font-size: 14px;
+            color: #838383;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="content clearfix">
+        <div class="item">
+        <div class="img">
+            <img src="images/img/mfw.png">
+            <span class="zk">疯抢<i></i></span>
+        </div>
+        <p>这是一段抢购商品的文字说明</p>
+    </div>
+    </div>
+    <div class="item">
+        <div class="img">
+            <img src="images/img/mfw.png">
+            <span class="zk">疯抢<i></i></span>
+        </div>
+        <p>这是一段抢购商品的文字说明</p>
+    </div>
+    <div class="item">
+        <div class="img">
+            <img src="images/img/mfw.png">
+            <span class="zk">疯抢<i></i></span>
+        </div>
+        <p>这是一段抢购商品的文字说明</p>
+    </div>
+
+</div>
+
+</body>
+</html>

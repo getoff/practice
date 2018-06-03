@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>19</title>
+    <style>
+        *{margin: 0;padding: 0;;list-style: none;}
+        a{text-decoration: none;}
+        img{vertical-align: top;border: none;}
+        #clearfix:after{content: "";display: block;clear: both;}
+        #box{
+            width: 234px;
+            height: 39px;
+            margin: 30px auto;
+            background-color: #4B91F3;
+            position: relative;
+        }
+        #select{
+            width: 42px;
+            height: 39px;
+            float: right;
+            position: relative;
+            background-color: #4A69F0;
+        }
+        #select i{
+            width: 0;
+            height: 0;
+            border-width: 8px 6px 0 6px;
+            border-style: solid;
+            border-color: #FFFFFF transparent transparent transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -4px;
+            margin-left: -4px;
+        }
+        .down{
+            display: block;
+            margin-right: 42px;
+            height:39px;
+            line-height: 39px;
+            text-align: center;
+        }
+        #menu{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 51px;
+            display: none;
+
+        }
+        #menu i{
+            width: 0;
+            height:0;
+            border-width: 0 8px 8px;
+            border-style: solid;
+            border-color: transparent transparent #06ACC6 transparent;
+            position: absolute;
+            right: 10px;
+            top: -8px;
+        }
+        #menu ul{
+            background-color: #4B91F3;
+            font-size: 14px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+        #menu li{
+            padding: 0 10px;
+            border-bottom: 1px solid hotpink;
+
+        }
+        #box:hover #menu{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box clearfix">
+        <div id="hover">
+            <span id="select"><i></i></span>
+            <span class="down">这是一个下拉选择框</span>
+        </div>
+        <div id="menu">
+            <i></i>
+            <ul>
+                <li>This is a text</li>
+                <li>This is a text</li>
+                <li>This is a text</li>
+                <li>This is a text</li>
+                <li>This is a text</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

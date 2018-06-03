@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a{text-decoration: none;}
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #box{
+            width:632px;
+            margin: 30px auto;
+        }
+        .img{
+            width:225px ;
+            height: 169px;
+            float: left;
+        }
+        .img img{
+            width: 225px;
+            height:169px;
+        }
+        .content{
+            width:395px;
+            float:right;
+        }
+        .content h3{
+            font-size: 18px;
+            height:30px ;
+            line-height:30px ;
+            font-weight: normal;
+            margin-bottom: 9px;
+        }
+        .content p{
+            font-size: 12px;
+            line-height:24px ;
+            text-indent: 2em;
+            height:119px;
+        }
+        .content .pl{
+            padding-left: 8px;
+            font-size: 12px;
+            float: left;
+        }
+        .content .pl .im{
+            padding-left: 18px;
+            background: url("images/image/pl.jpg") left center no-repeat;
+        }
+        .share{
+            font-size: 12px;
+            float: right;
+
+        }
+        .share a{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-left: 7px;
+            background:url("images/image/sina.jpg") left top no-repeat;
+            vertical-align: top;
+        }
+        .share span{
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="wy">
+        <div class="img clearfix">
+            <img src="images/image/wy.jpg">
+        </div>
+        <div class="content">
+            <h3>这是一个标题</h3>
+            <p>这是一段文字说明这是一段文字说明这是一段文字说明这是一段文字说明这是一段文字说明这是一段文字说明这是一段文字说明
+                这是一段文字说明这是一段文字说明这是一段文字说明这是一段文字说明这是一段文字说明这是一段文字说明
+            </p>
+            <div class="pl"><a href="#" class="im">评论(174)</a> </div>
+            <div class="share">
+                <span>分享到:</span>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            width: 360px;
+            margin: 30px auto;
+            border: 1px solid #15C3CA;
+            padding: 10px 5px;
+        }
+        .list  a{
+            height: 24px;
+            line-height: 24px;
+            font-size: 14px;
+            color: #838383;
+            text-align: center;
+            padding: 0 8px;
+            display: block;
+            text-decoration: none;
+
+        }
+        .list-in{
+            background-color: #CCCCCC;
+            font-size: 12px;
+            color: #838383;
+        }
+        .list-in li{
+            height: 20px;
+            line-height: 20px;
+            padding: 5px 5px;
+            text-align: center;
+        }
+        .position{
+            width: 220px;
+            margin: 30px auto;
+        }
+        .movie,.movie img{
+            width: 220px;
+            height: 300px;
+        }
+        .movie{
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .movie .goal{
+            position: absolute;
+            left: -8px;
+            bottom: -5px;
+            background-color: #4B91F3;
+            font-size: 16px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            color: #CCCCCC;
+            text-align: center;
+        }
+        .text{
+            font-size: 14px;
+            color:#abcdef;
+            line-height: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <ul class="list">
+            <li><a href="#"> 一个内容</a></li>
+            <li><a href="#"> 一个内容</a></li>
+            <li><a href="#"> 一个内容</a></li>
+            <li>
+                <a href="#"> 一个内容</a>
+                <ul class="list-in">
+                    <li>详细内容</li>
+                    <li>详细内容</li>
+                    <li>详细内容</li>
+                </ul>
+            </li>
+            <li><a href="#"> 一个内容</a></li>
+            <li><a href="#"> 一个内容</a></li>
+            <li><a href="#"> 一个内容</a></li>
+
+        </ul>
+    </div>
+    <div class="position">
+        <div class="movie">
+            <img src="images/tv.jpg">
+            <span class="goal">8.3</span>
+        </div>
+        <p class="text">行尸走肉</p>
+    </div>
+</body>
+</html>

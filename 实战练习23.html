@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>23</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a{text-decoration: none;}
+        #box{
+            height: 40px;
+            background-color: #abcdef;
+        }
+        #head{
+            width: 1000px;
+            height: 40px;
+            margin: 0 auto;
+        }
+        #menu{
+            position: relative;
+            float: right;
+        }
+        #head a{
+            display: inline-block;
+            height:40px;
+            line-height: 40px;
+            padding: 0 10px;
+            color: #666666;
+        }
+        #head a:hover{
+            background-color: #FFFFFF;
+            border-left: 1px solid #666;
+            border-right: 1px solid #666;
+            margin-left: -1px;
+            margin-right: -1px;
+        }
+        #head ul{
+            position: absolute;
+            left:-1px;
+            top: 100%;
+            border-top: none;
+            border: 1px solid #666;
+            width: 100%;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+ <div id="box">
+     <div id="head">
+         <div id="menu">
+             <a href="#">这是一个标题</a>
+             <ul>
+                 <li>这是下拉菜单</li>
+                 <li>这是下拉菜单</li>
+                 <li>这是下拉菜单</li>
+                 <li>这是下拉菜单</li>
+                 <li>这是下拉菜单</li>
+
+            </ul>
+        </div>
+     </div>
+ </div>
+
+</body>
+</html>

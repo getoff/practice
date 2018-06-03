@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+    <style>
+        *{margin: 0;padding: 0;list-style: none;}
+        img{border: none;vertical-align: top;}
+        input{border: none;background-color: transparent;outline: none;}
+        a{text-decoration: none;}
+        .clearfix:after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .game{
+            width: 360px;
+            margin: 30px auto;
+        }
+        .gamelist li{
+            border-bottom: 1px dashed #E0E0E0;
+            padding: 9px 0;
+        }
+        .text h3{
+            height: 32px;
+            line-height: 32px;
+            font-size: 16px;
+            color: #333333;
+            font-weight: normal;
+        }
+        .gamelist .alink{
+            width: 60px;
+            height: 30px;
+            font-size: 14px;
+            border: 1px solid #F7797A;
+            line-height: 30px;
+            color: #F7797A;
+            background-color: #FFFFFF;
+            text-align: center;
+            float: right;
+        }
+        .img{
+            float: left;
+            width:70px;
+            height: 70px;
+            margin-right: 20px;
+            display: none;
+        }
+        .text p{
+            font-size: 12px;
+            color: #888888;
+            height: 23px;
+            line-height: 23px;
+        }
+        .text span{
+            color: #F77A82;
+        }
+        .text p,.text span{
+            display:none;
+        }
+        .cur .img,.cur p{
+            display: block;
+        }
+        .cur span{
+            display:inline-block;
+        }
+        .cur .alink{
+            margin-top: 26px;
+        }
+        .cur .text h3{
+            line-height: 25px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <ul class="gamelist">
+            <li>
+                <a href="#" class="alink">领取</a>
+                <div class="img">
+                    <img src="images/test/g1.jpg">
+                </div>
+                <div class="text">
+                    <h3>火影忍者暗部集结特权礼包</h3>
+                    <p>剩余:<span>93%</span></p>
+                    <p>有效期至:2016-03-31</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="alink">领取</a>
+                <div class="img">
+                    <img src="images/test/g1.jpg">
+                </div>
+                <div class="text">
+                    <h3>新秦时明月媒体独家礼包</h3>
+                    <p>剩余:<span>93%</span></p>
+                    <p>有效期至:2016-03-31</p>
+                </div>
+            </li>
+            <li class="cur clearfix">
+                <a href="#" class="alink">领取</a>
+                <div class="img">
+                    <img src="images/test/g1.jpg">
+                </div>
+                <div class="text">
+                    <h3 class="title">梦幻西游三月情谊礼包</h3>
+                    <p>剩余:<span>93%</span></p>
+                    <p>有效期至:2016-03-31</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="alink">领取</a>
+                <div class="img">
+                    <img src="images/test/g1.jpg">
+                </div>
+                <div class="text">
+                    <h3>花千骨安卓越狱新版礼包</h3>
+                    <p>剩余:<span>93%</span></p>
+                    <p>有效期至:2016-03-31</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="alink">领取</a>
+                <div class="img">
+                    <img src="images/test/g1.jpg">
+                </div>
+                <div class="text">
+                    <h3>九阴独家元宵礼包</h3>
+                    <p>剩余:<span>93%</span></p>
+                    <p>有效期至:2016-03-31</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

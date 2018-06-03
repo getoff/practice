@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>33</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .clearinner li{
+            display: block;
+            clear:both;
+            content: "";
+        }
+        input{border: none;outline: none;background-color: transparent;}
+        #box{
+            width: 700px;
+            margin: 30px auto;
+        }
+        #box li{
+            margin-bottom: 12px;
+        }
+        #box .text{
+            font-size: 14px;
+            width: 100px;
+            height: 29px;
+            line-height: 29px;
+            float: left;
+            text-align: right;
+            padding-right: 12px;
+        }
+        .content{
+            margin-left: 110px;
+        }
+        .content input{
+            width: 180px;
+            height: 24px;
+            line-height: 24px;
+            border: 1px solid #e35969;
+            padding: 0 10px;
+        }
+        .sex{
+            font-size: 14px;
+            padding-top: 4px;
+        }
+        .sex label{
+            margin-right: 4px;
+        }
+        .sex input{
+            vertical-align:-2px;
+            margin-right: 8px;
+        }
+        .birth{
+            margin-top: 5px;
+            width: 50px;
+            height: 22px;
+        }
+        .tiaokuan{
+            padding-top: 10px;
+            font-size: 14px;
+            margin-right: 100px;
+        }
+        .tiaokuan label{
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .tiaokuan input{
+            vertical-align: -2px;
+            width: 14px;
+            height: 14px;
+        }
+        .tiaokuan a{
+            text-decoration: none;
+        }
+        .content .button{
+            width: 165px;
+            height: 37px;
+            background:url("images/img3/btn.png") left top no-repeat;
+            vertical-align: 2px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <ul id="box" class="clearinner" >
+        <li>
+            <label for="text" class="text">Email:</label>
+            <div class="content">
+                <input type="text" id="text">
+                <span>这是一段文字</span>
+            </div>
+        </li>
+        <li>
+            <label for="name" class="text">姓名:</label>
+            <div class="content">
+                <input type="text" id="name">
+                <span>这是一段文字</span>
+            </div>
+        </li>
+        <li>
+            <label class="text">性别:</label>
+            <div class="sex">
+                <label for="sex1">男</label>
+                <input type="radio" id="sex1" name="sex">
+                <label for="sex2">女</label>
+                <input type="radio" id="sex2" name="sex">
+            </div>
+        </li>
+        <li>
+            <label class="text">生日:</label>
+            <div class="content">
+                <select class="birth">
+                    <option value="">-</option>
+                    <option value="">1997</option>
+                    <option value="">1998</option>
+                    <option value="">1999</option>
+                </select>
+                <select class="birth">
+                    <option value="">-</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                </select>
+                <select class="birth">
+                    <option value="">-</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value="">13</option>
+                </select>
+            </div>
+        </li>
+        <li>
+            <div class="content">
+                <input type="button" value="" class="button">
+                <div class="tiaokuan">
+                    <input type="checkbox" id="t1">
+                    <label for="t1">我接受</label>
+                    <a href="#">这是一段文字</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</body>
+</html>
